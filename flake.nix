@@ -13,7 +13,7 @@
         wpak = pkgs.buildGoModule rec {
           name = "wpak";
           src = ./.;
-          vendorHash = "";
+          vendorHash = null;
         };
       in
       {
