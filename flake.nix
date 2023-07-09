@@ -11,9 +11,9 @@
       let 
         pkgs = import nixpkgs { inherit system; };
         wpak = pkgs.buildGoModule rec {
-          name = "wpak";
+          name = "github.com/semickolon/wpak";
           src = ./.;
-          vendorHash = null;
+          vendorHash = "sha256-CV3kjstQrPQOgs4CQlFqQm6A4Q4r5fIt3gxpZBbIjls=";
         };
       in
       {
